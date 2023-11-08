@@ -1,16 +1,15 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/components">Components</router-link> | 
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <Layout>
+      <Aside slot="layout-left"></Aside>
+      <router-view/>
+    </Layout>
   </div>
 </template>
 
 
 <style lang="less" scoped>
+
 #app {
 
   text-align: center;
@@ -30,3 +29,14 @@ nav {
   }
 }
 </style>
+
+<script>
+import Layout from '@/components/Common/Layout/index.vue'
+import Aside from '@/components/Aside/index.vue'
+export default {
+  components: {
+    Aside,
+    Layout
+  },
+}
+</script>

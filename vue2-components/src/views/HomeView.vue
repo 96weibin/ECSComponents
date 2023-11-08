@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <h1>vue 2 components HomeView</h1>
+  <div class="home-container">
+    Home
   </div>
 </template>
 
@@ -13,3 +13,11 @@ export default Vue.extend({
   },
 });
 </script>
+
+
+<style lang="less" scoped>
+.home-container{
+  width: 100%;
+  height: 100%;
+}
+</style>

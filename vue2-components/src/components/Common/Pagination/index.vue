@@ -41,7 +41,7 @@
                 return (this.pageSize - 4) / 2
             },
             currentArray(){
-                let arr = [];
+                let arr:{ val: any; type?: string; }[] = [];
                 this.pageStart = this.currentCount - this.oneSideNum;
                 if(this.pageStart < 1)
                     this.pageStart = 1;
@@ -93,7 +93,7 @@
 </script>
 
 <style lang="less" scoped>
-@import '../../style/var.less';
+@import '../../../style/var.less';
 .pagination-container{
     display: flex;
     justify-content: center;
