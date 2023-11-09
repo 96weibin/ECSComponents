@@ -11,16 +11,7 @@
   ],
   "parserOptions": {
     "ecmaVersion": 2019,
-    "sourceType": "module",
-    "project": "./tsconfig.json",
-    "tsconfigRootDir": "."
-  },
-  "rules": {
-    "no-unused-vars": 0,
-    "@typescript-eslint/no-unused-vars": 0,
-    "no-prototype-builtins": 0,
-    "no-console": 0,
-    "getter-return": 0
+    "sourceType": "module"
   },
   "env": {
     "es6": true,
