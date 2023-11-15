@@ -4,9 +4,10 @@ import router from './router'
 import store from './store'
 import "./style/init.less"
 import './style/var.less'
-Vue.config.productionTip = false
+import $axios from './service/handel'
 
-new Vue({
+Vue.prototype.$axios = $axios;
+let vm = new Vue({
   router,
   store,
   render: h => h(App)

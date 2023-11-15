@@ -1,0 +1,8 @@
+{
+  "name": "serve",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "weibin",
+  "license": "MIT",
+  "type": "module"
+}
