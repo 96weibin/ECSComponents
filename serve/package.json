@@ -4,5 +4,8 @@
   "main": "index.js",
   "author": "weibin",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "koa": "^2.14.2"
+  }
 }
