@@ -1,7 +1,7 @@
 <template>
   <div class="home-container">
     Home
-    <div v-for="a in data">
+    <div v-for="(a, i) in data" :key="i">
       <h3>{{ a.label }}</h3>
       <h3>{{ a.value }}</h3>
       <Icon name="icon-star"></Icon>
@@ -29,7 +29,7 @@ export default Vue.extend({
       console.log(data)
     }) 
 
-    this.$utils.showMsg("base base base ", 'star', 2000, this.$el);
+    this.$utils.showMsg(`恭喜 发送成功`, "success", 200000, this.$el);
   },
 });
 </script>

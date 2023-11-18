@@ -10,6 +10,7 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": false,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "sourceMap": true,
     "baseUrl": ".",
     "types": [

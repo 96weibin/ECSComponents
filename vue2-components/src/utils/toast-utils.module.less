@@ -1,0 +1,35 @@
+@import '@/style/var.less';
+@import '@/style/mixin.less';
+
+.toast-wrapper{
+    max-width: 400px;
+    display: inline-block;
+    border: 1px solid @bs-gray-dark;
+    box-shadow: 5px 2px 5px @bs-gray-800;
+    text-align: left;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 9999;
+    background-color: @bs-gray-100;
+    transition: .5s;
+    .slef-center(absolute);
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(30px);
+    display: flex;
+    align-items: center;
+    &-info{
+        background-color: @bs-info;
+    }
+    &-success {
+        background-color: @bs-success;
+    }
+    &-warning{
+        background-color: @bs-warning;
+    }
+    &-danger{
+        background-color: @bs-danger;
+    }
+    .icon {
+        margin-right: 10px;
+    }
+}

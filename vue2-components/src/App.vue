@@ -12,7 +12,6 @@
 
 #app {
 
-  text-align: center;
   color: #2c3e50;
 }
 
@@ -33,10 +32,16 @@ nav {
 <script>
 import Layout from '@/components/Common/Layout/index.vue'
 import Aside from '@/components/Aside/index.vue'
+import Icon from '@/components/Common/Icon/index.vue'
+
 export default {
+  mounted () {
+  },
   components: {
     Aside,
-    Layout
+    Layout,
+    Icon 
   },
+ 
 }
 </script>

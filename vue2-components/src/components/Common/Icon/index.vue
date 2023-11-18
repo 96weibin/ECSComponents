@@ -16,6 +16,9 @@
                 require: true  
             }
         },
+        created () {
+            console.log(this.name);
+        },
     }
 </script>
 
