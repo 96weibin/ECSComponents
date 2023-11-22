@@ -1,6 +1,6 @@
 <template>
     <div class="icon-container">
-        <div class="iconfont" :class="[name]" :style="{fontSize: size + 'px'}"></div>
+        <div class="iconfont" :class="[name]" :style="{fontSize: size + 'px'}" @click="handelClick"></div>
     </div>
 </template>
 
@@ -18,6 +18,11 @@
         },
         created () {
             console.log(this.name);
+        },
+        methods: {
+            handelClick() {
+                this.$emit('click')
+            }
         },
     }
 </script>
