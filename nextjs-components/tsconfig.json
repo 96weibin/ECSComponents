@@ -17,8 +17,21 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+<<<<<<< HEAD:react-components/tsconfig.json
     "noEmit": true,
     "jsx": "react-jsx"
+=======
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+>>>>>>> 0aad10dcc4431ed5a3e0bcebab6fed7ba4f2a19b:nextjs-components/tsconfig.json
   },
   "include": [
     "src"
