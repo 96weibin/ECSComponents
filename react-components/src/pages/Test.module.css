@@ -1,0 +1,13 @@
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    overflow: auto;
+}
+.myHeader {
+    border: 1px solid;
+    position: sticky;
+    position: -webkit-sticky;
+    top: -1px;
+    background-color: azure;
+}

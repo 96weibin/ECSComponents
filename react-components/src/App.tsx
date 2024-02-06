@@ -1,17 +1,17 @@
-import React from 'react';
 import {
   RouterProvider,
 } from "react-router-dom";
-import router from './router/index';
-
+import './App.css'
+import router from './routers/route'
+import SimpleBottomNavigation from './components/BottomNavigation/BottomNavigation';
 
 function App() {
   return (
-    <div className="App">
-      <header>Header</header>
-      {/* <RouterProvider router={router} /> */}
-    </div>
-  );
+    <>
+      <RouterProvider router={router} />
+      <SimpleBottomNavigation></SimpleBottomNavigation>
+    </>
+  )
 }
 
-export default App;
+export default App
